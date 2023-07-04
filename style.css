@@ -117,3 +117,32 @@ background: #ff8664;
     font-size: 0.6rem;
     font-weight: 500;
 }
+
+/* search box */
+
+.search-box {
+    position: absolute;
+    top: 110%;
+    right: -100%;
+    width: 200px;
+    box-shadow: var(--box-shadow);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    padding: 20px;
+    color: var(--main-color);
+}
+
+.search-box input::placeholder {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.search-box.active {
+   right: 1rem;
+   transition: 0.2s all linear;
+}
